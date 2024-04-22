@@ -1,10 +1,10 @@
 const DATA_URL_PATTERN = /^data:([^/]+\/[^,;]+(?:[^,]*?))(;base64)?,([\s\S]*)$/
 
-export default function dataURItoBlob(
+export default function dataURItoBlob<T extends boolean>(
   dataURI: string,
   opts: { mimeType?: string; name?: string },
-  toFile?: boolean,
-): Blob | File {
+  toFile?: T,
+): T extends true ? File : Blob {
   // get the base64 data
   const dataURIData = DATA_URL_PATTERN.exec(dataURI)
 
@@ -28,5 +28,5 @@ export default function dataURItoBlob(
     return new File(data, opts.name || '', { type: mimeType })
   }
 
-  return new Blob(data, { type: mimeType })
+  return new Blob(data, { type: mimeType }) as any
 }
