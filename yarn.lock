@@ -7434,6 +7434,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/hast@npm:^3.0.0":
+  version: 3.0.4
+  resolution: "@types/hast@npm:3.0.4"
+  dependencies:
+    "@types/unist": "npm:*"
+  checksum: 10/732920d81bb7605895776841b7658b4d8cc74a43a8fa176017cc0fb0ecc1a4c82a2b75a4fe6b71aa262b649d3fb62858c6789efa3793ea1d40269953af96ecb5
+  languageName: node
+  linkType: hard
+
 "@types/http-cache-semantics@npm:^4.0.2":
   version: 4.0.4
   resolution: "@types/http-cache-semantics@npm:4.0.4"
@@ -8310,7 +8319,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@uppy-dev/remark-lint-uppy@workspace:private/remark-lint-uppy"
   dependencies:
-    mdast-comment-marker: "npm:^2.1.0"
+    mdast-comment-marker: "npm:^3.0.0"
     remark-frontmatter: "npm:^5.0.0"
     remark-lint: "npm:^9.0.0"
     remark-lint-emphasis-marker: "npm:^4.0.0"
@@ -8336,7 +8345,7 @@ __metadata:
     retext-simplify: "npm:^8.0.0"
     retext-syntax-mentions: "npm:^4.0.0"
     unified: "npm:^11.0.0"
-    unified-message-control: "npm:^5.0.0"
+    unified-message-control: "npm:^4.0.0"
   languageName: unknown
   linkType: soft
 
@@ -20585,13 +20594,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mdast-comment-marker@npm:^2.0.0, mdast-comment-marker@npm:^2.1.0":
+"mdast-comment-marker@npm:^2.0.0":
   version: 2.1.2
   resolution: "mdast-comment-marker@npm:2.1.2"
   dependencies:
     "@types/mdast": "npm:^3.0.0"
     mdast-util-mdx-expression: "npm:^1.1.0"
   checksum: 10/f88415cda29258df780dae0f4314660fc71ee18dbd0e7fbfc897177d562a1c3a34c650a595a01a1628508088197843424c95938b8980cb1d4ee11fe78c5ce851
+  languageName: node
+  linkType: hard
+
+"mdast-comment-marker@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "mdast-comment-marker@npm:3.0.0"
+  dependencies:
+    "@types/mdast": "npm:^4.0.0"
+    mdast-util-mdx-expression: "npm:^2.0.0"
+  checksum: 10/4a01899f50301c542a054ede974a1bc481de1b7c798c13974bde9e34c006ec744d937c24eb7b7595a26f491f3558848621f6c81e7576702e3b89822b6f923268
   languageName: node
   linkType: hard
 
@@ -20688,6 +20707,20 @@ __metadata:
     mdast-util-from-markdown: "npm:^1.0.0"
     mdast-util-to-markdown: "npm:^1.0.0"
   checksum: 10/90b8ec5b6fdd05282f45c1286bb8c5c3568959877930a10b8bcae100676d3baead8c6f26a768abfe74fde93fbf9cd0eabb3ab63af88a6026a3029a3f6700bd63
+  languageName: node
+  linkType: hard
+
+"mdast-util-mdx-expression@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "mdast-util-mdx-expression@npm:2.0.0"
+  dependencies:
+    "@types/estree-jsx": "npm:^1.0.0"
+    "@types/hast": "npm:^3.0.0"
+    "@types/mdast": "npm:^4.0.0"
+    devlop: "npm:^1.0.0"
+    mdast-util-from-markdown: "npm:^2.0.0"
+    mdast-util-to-markdown: "npm:^2.0.0"
+  checksum: 10/378f3cbc899e95a07f3889e413ed353597331790fdbd6b9efd24bee4fb1eae11e10d35785a86e3967f301ad445b218a4d4f9af4f1453cc58e7c6a6c02a178a8a
   languageName: node
   linkType: hard
 
@@ -27681,13 +27714,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"space-separated-tokens@npm:^2.0.0":
-  version: 2.0.2
-  resolution: "space-separated-tokens@npm:2.0.2"
-  checksum: 10/202e97d7ca1ba0758a0aa4fe226ff98142073bcceeff2da3aad037968878552c3bbce3b3231970025375bbba5aee00c5b8206eda408da837ab2dc9c0f26be990
-  languageName: node
-  linkType: hard
-
 "spawn-sync@npm:^1.0.15":
   version: 1.0.15
   resolution: "spawn-sync@npm:1.0.15"
@@ -29686,22 +29712,6 @@ __metadata:
     vfile-location: "npm:^4.0.0"
     vfile-message: "npm:^3.0.0"
   checksum: 10/5ea7edbf112aa4c7ba10e9c0dbd4ae5236921fc13f69bb61aacedc2497cdfda2c0512ce9f9bd3d5c00019c71ba2590a4fdf42b1c068f52f4db59ec80a1cc7340
-  languageName: node
-  linkType: hard
-
-"unified-message-control@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "unified-message-control@npm:5.0.0"
-  dependencies:
-    "@types/unist": "npm:^3.0.0"
-    devlop: "npm:^1.0.0"
-    space-separated-tokens: "npm:^2.0.0"
-    unist-util-is: "npm:^6.0.0"
-    unist-util-visit: "npm:^5.0.0"
-    vfile: "npm:^6.0.0"
-    vfile-location: "npm:^5.0.0"
-    vfile-message: "npm:^4.0.0"
-  checksum: 10/58bd80331ba65236e9f026cb8482f24f25c42a550c2d8aed3d7e766a8a1d536c2b2e28b0f0670f1f25c9d450e3d9e7c997f76b406dc8f19b8c5cbbfc91cb8847
   languageName: node
   linkType: hard
 
