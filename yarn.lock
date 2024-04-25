@@ -8829,7 +8829,7 @@ __metadata:
     content-disposition: "npm:^0.5.4"
     cookie-parser: "npm:1.4.6"
     cors: "npm:^2.8.5"
-    escape-goat: "npm:3.0.0"
+    escape-goat: "npm:4.0.0"
     escape-string-regexp: "npm:4.0.0"
     express: "npm:4.19.2"
     express-interceptor: "npm:1.2.0"
@@ -14379,10 +14379,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"escape-goat@npm:3.0.0":
-  version: 3.0.0
-  resolution: "escape-goat@npm:3.0.0"
-  checksum: 10/6719196d073cc72d0bbe079646d6fa32f226f24fd7d00c1a71fa375bd4c5b8999050021d9e62c232a8874230328ebf89a5c8bd76fb72f7ccd6229efbe5abd04e
+"escape-goat@npm:4.0.0":
+  version: 4.0.0
+  resolution: "escape-goat@npm:4.0.0"
+  checksum: 10/515f4c5427118a8513ef12ad3fbc194b2a0239a6bc8d923b8ebd885c97f3518ce54f911007e6c9424387d68b0f54cd72aa277cfc2ca44da8cb1bd6a880cfd13c
   languageName: node
   linkType: hard
 

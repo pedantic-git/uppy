@@ -1,4 +1,3 @@
-const { htmlEscape } = require('escape-goat')
 const logger = require('../logger')
 const oAuthState = require('../helpers/oauth-state')
 const tokenService = require('../helpers/jwt')
@@ -121,6 +120,7 @@ exports.getCredentialsOverrideMiddleware = (providers, companionOptions) => {
 
       next()
     } catch (keyErr) {
+      const { htmlEscape } = import('escape-goat')
       // TODO we should return an html page here that can communicate the error
       // back to the Uppy client, just like /send-token does
       res.send(`
