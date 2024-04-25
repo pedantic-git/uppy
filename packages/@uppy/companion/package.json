@@ -46,7 +46,7 @@
     "express-interceptor": "1.2.0",
     "express-prom-bundle": "7.0.0",
     "express-request-id": "1.4.1",
-    "express-session": "1.17.3",
+    "express-session": "1.18.0",
     "got": "^13.0.0",
     "grant": "5.4.22",
     "helmet": "^4.6.0",
