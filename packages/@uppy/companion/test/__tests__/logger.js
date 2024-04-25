@@ -1,4 +1,4 @@
-const chalk = require('chalk')
+const chalk = import('chalk').then(m => m.default)
 const logger = require('../../src/server/logger')
 
 const maskables = ['ToBeMasked1', 'toBeMasked2', 'toBeMasked(And)?Escaped']
@@ -38,34 +38,34 @@ describe('Test Logger secret mask', () => {
     expect(loggedMessage).toBe(exptectedMsg)
   })
 
-  test('masks secret values present in log.warn messages', () => {
+  test('masks secret values present in log.warn messages', async () => {
     const loggedMessage = captureConsoleLog(() => {
       logger.warn('this warning has ToBeMasked1 and toBeMasked2 and case-insensitive TOBEMasKED2')
     })
 
-    const exptectedMsg = chalk.bold.yellow('this warning has ****** and ****** and case-insensitive ******')
+    const exptectedMsg = (await chalk).bold.yellow('this warning has ****** and ****** and case-insensitive ******')
 
     expect(loggedMessage).toBeTruthy()
     expect(loggedMessage).toBe(exptectedMsg)
   })
 
-  test('masks secret values present in log.error messages', () => {
+  test('masks secret values present in log.error messages', async () => {
     const loggedMessage = captureConsoleLog(() => {
       logger.error(new Error('this error has ToBeMasked1 and toBeMasked2 and case-insensitive TOBEMasKED2'))
     })
 
-    const exptectedMsg = chalk.bold.red('Error: this error has ****** and ****** and case-insensitive ******')
+    const exptectedMsg = (await chalk).bold.red('Error: this error has ****** and ****** and case-insensitive ******')
 
     expect(loggedMessage.startsWith(exptectedMsg)).toBeTruthy()
   })
 
-  test('masks secret values present in log.error stack trace', () => {
+  test('masks secret values present in log.error stack trace', async () => {
     const loggedMessage = captureConsoleLog(() => {
       const err = new Error('this error has ToBeMasked1 and toBeMasked2 and case-insensitive TOBEMasKED2')
       logger.error(err, '', '')
     })
 
-    const exptectedMsg = chalk.bold.red('Error: this error has ****** and ****** and case-insensitive ******')
+    const exptectedMsg = (await chalk).bold.red('Error: this error has ****** and ****** and case-insensitive ******')
 
     expect(loggedMessage).toBeTruthy()
     expect(loggedMessage.startsWith(exptectedMsg)).toBe(true)
@@ -74,12 +74,12 @@ describe('Test Logger secret mask', () => {
     expect(loggedMessage.includes('TOBEMasKED2')).toBe(false)
   })
 
-  test('escape regex characters from secret values before masking them', () => {
+  test('escape regex characters from secret values before masking them', async () => {
     const loggedMessage = captureConsoleLog(() => {
       logger.warn('this warning has ToBeMasked(And)?Escaped but not toBeMaskedEscaped ')
     })
 
-    const exptectedMsg = chalk.bold.yellow('this warning has ****** but not toBeMaskedEscaped ')
+    const exptectedMsg = (await chalk).bold.yellow('this warning has ****** but not toBeMaskedEscaped ')
 
     expect(loggedMessage).toBeTruthy()
     expect(loggedMessage).toBe(exptectedMsg)

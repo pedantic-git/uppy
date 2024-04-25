@@ -1,4 +1,7 @@
-const chalk = require('chalk')
+let chalk
+import('chalk').then(m => {
+  chalk = m.default
+})
 const escapeStringRegexp = require('escape-string-regexp')
 const util = require('node:util')
 
@@ -88,7 +91,7 @@ exports.info = (msg, tag, traceId) => {
  * @param {string} [traceId] a unique id to easily trace logs tied to a request
  */
 exports.warn = (msg, tag, traceId) => {
-  log({ arg: msg, tag, level: 'warn', traceId, color: chalk.bold.yellow })
+  log({ arg: msg, tag, level: 'warn', traceId, color: chalk?.bold.yellow })
 }
 
 /**
@@ -99,7 +102,7 @@ exports.warn = (msg, tag, traceId) => {
  * @param {string} [traceId] a unique id to easily trace logs tied to a request
  */
 exports.error = (msg, tag, traceId) => {
-  log({ arg: msg, tag, level: 'error', traceId, color: chalk.bold.red })
+  log({ arg: msg, tag, level: 'error', traceId, color: chalk?.bold.red })
 }
 
 /**
@@ -111,6 +114,6 @@ exports.error = (msg, tag, traceId) => {
  */
 exports.debug = (msg, tag, traceId) => {
   if (process.env.NODE_ENV !== 'production') {
-    log({ arg: msg, tag, level: 'debug', traceId, color: chalk.bold.blue })
+    log({ arg: msg, tag, level: 'debug', traceId, color: chalk?.bold.blue })
   }
 }
