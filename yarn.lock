@@ -8845,7 +8845,7 @@ __metadata:
     express-session: "npm:1.18.0"
     got: "npm:^13.0.0"
     grant: "npm:5.4.22"
-    helmet: "npm:^4.6.0"
+    helmet: "npm:^7.0.0"
     ipaddr.js: "npm:^2.0.1"
     jest: "npm:^29.0.0"
     jsonwebtoken: "npm:9.0.2"
@@ -16816,10 +16816,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"helmet@npm:^4.6.0":
-  version: 4.6.0
-  resolution: "helmet@npm:4.6.0"
-  checksum: 10/47129c540dc815a30274b687699738e7dd9acdeeaa5eb4682cba8d364a381fb502b140c7fef5b8d5f9a01d9d17ed8a17ef62c884816bd9e4535d750ce3a9a6be
+"helmet@npm:^7.0.0":
+  version: 7.1.0
+  resolution: "helmet@npm:7.1.0"
+  checksum: 10/aa13b0907d9d31b65e4ec73093b58d7e94e83c06818cc06869f5eb95d205574a14f01ed71cadfac4a68b736a1a6d7ef2290f3f6ef77ac664c7e75b8f9eddf88c
   languageName: node
   linkType: hard
 
