@@ -8860,7 +8860,7 @@ __metadata:
     redis: "npm:4.6.13"
     serialize-error: "npm:^11.0.0"
     serialize-javascript: "npm:^6.0.0"
-    supertest: "npm:6.2.4"
+    supertest: "npm:7.0.0"
     tus-js-client: "npm:^4.1.0"
     typescript: "npm:~5.4"
     validator: "npm:^13.0.0"
@@ -16011,7 +16011,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"formidable@npm:^2.0.1, formidable@npm:^2.1.2":
+"formidable@npm:^2.0.1":
   version: 2.1.2
   resolution: "formidable@npm:2.1.2"
   dependencies:
@@ -16023,7 +16023,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"formidable@npm:^3.2.4":
+"formidable@npm:^3.2.4, formidable@npm:^3.5.1":
   version: 3.5.1
   resolution: "formidable@npm:3.5.1"
   dependencies:
@@ -28543,31 +28543,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"superagent@npm:^8.0.0":
-  version: 8.1.2
-  resolution: "superagent@npm:8.1.2"
+"superagent@npm:^9.0.1":
+  version: 9.0.1
+  resolution: "superagent@npm:9.0.1"
   dependencies:
     component-emitter: "npm:^1.3.0"
     cookiejar: "npm:^2.1.4"
     debug: "npm:^4.3.4"
     fast-safe-stringify: "npm:^2.1.1"
     form-data: "npm:^4.0.0"
-    formidable: "npm:^2.1.2"
+    formidable: "npm:^3.5.1"
     methods: "npm:^1.1.2"
     mime: "npm:2.6.0"
     qs: "npm:^6.11.0"
     semver: "npm:^7.3.8"
-  checksum: 10/33d0072e051baf91c7d68131c70682a0650dd1bd0b8dfb6f88e5bdfcb02e18cc2b42a66e44b32fd405ac6bcf5fd57c6e267bf80e2a8ce57a18166a9d3a78f57d
+  checksum: 10/a6e7cd5b93aa51b297cc66ede2f08c5143d4645d3ec424f9ee45dd890e6ba33637e63ce0d724c2a9536f83a8d913c0e0a52575fd9c02e0043a5a7d61708a0a45
   languageName: node
   linkType: hard
 
-"supertest@npm:6.2.4":
-  version: 6.2.4
-  resolution: "supertest@npm:6.2.4"
+"supertest@npm:7.0.0":
+  version: 7.0.0
+  resolution: "supertest@npm:7.0.0"
   dependencies:
     methods: "npm:^1.1.2"
-    superagent: "npm:^8.0.0"
-  checksum: 10/5b184f9cb932ed962783516073245e4dc713760f4b410c05e54b7aa5a7e6e3940bfce40af1be601bb1a4d498489c58be44ca43a2c9f67e430c8355b5496f20f5
+    superagent: "npm:^9.0.1"
+  checksum: 10/73bf2a37e13856a1b3e6a37b9df5cec8e506aa0360a5f5ecd989d1f4b0edf168883e306012e81e371d5252c17d4c7bef4ba30633dbf3877cbf52fc7af51cca9b
   languageName: node
   linkType: hard
 
