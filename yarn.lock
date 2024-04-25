@@ -8858,7 +8858,7 @@ __metadata:
     node-schedule: "npm:2.1.1"
     prom-client: "npm:15.1.2"
     redis: "npm:4.6.13"
-    serialize-error: "npm:^2.1.0"
+    serialize-error: "npm:^11.0.0"
     serialize-javascript: "npm:^6.0.0"
     supertest: "npm:6.2.4"
     tus-js-client: "npm:^3.1.3"
@@ -27080,6 +27080,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"serialize-error@npm:^11.0.0":
+  version: 11.0.3
+  resolution: "serialize-error@npm:11.0.3"
+  dependencies:
+    type-fest: "npm:^2.12.2"
+  checksum: 10/5fe19e120e9ad8488c0abe27517e60da75bd65f56ae1cb48d8524e013d0e07f18bb9d05eca72898c5244e1168576f3131f29145c9f785e735e10742ee9c86c08
+  languageName: node
+  linkType: hard
+
 "serialize-error@npm:^2.1.0":
   version: 2.1.0
   resolution: "serialize-error@npm:2.1.0"
@@ -29398,6 +29407,13 @@ __metadata:
   version: 1.4.0
   resolution: "type-fest@npm:1.4.0"
   checksum: 10/89875c247564601c2650bacad5ff80b859007fbdb6c9e43713ae3ffa3f584552eea60f33711dd762e16496a1ab4debd409822627be14097d9a17e39c49db591a
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^2.12.2":
+  version: 2.19.0
+  resolution: "type-fest@npm:2.19.0"
+  checksum: 10/7bf9e8fdf34f92c8bb364c0af14ca875fac7e0183f2985498b77be129dc1b3b1ad0a6b3281580f19e48c6105c037fb966ad9934520c69c6434d17fd0af4eed78
   languageName: node
   linkType: hard
 
